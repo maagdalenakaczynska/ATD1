@@ -1,0 +1,7 @@
+db.people.updateMany({"location.city":"Moscow"},{"$set":{"location.city":"Moskwa"}})
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 2,
+  modifiedCount: 2,
+  upsertedCount: 0 }
+db.people.find({"location.city":"Moskwa"})

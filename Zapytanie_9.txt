@@ -1,0 +1,7 @@
+db.people.updateMany({"first_name":"Antonio"},{"$set":{"hobby":"pingpong"}})
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 59,
+  modifiedCount: 59,
+  upsertedCount: 0 }
+db.people.find({"first_name": "Antonio"})

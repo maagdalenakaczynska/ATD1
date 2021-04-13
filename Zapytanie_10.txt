@@ -1,0 +1,7 @@
+db.people.updateMany({"job":"Editor"},{"$unset" :{"email":1}})
+{ acknowledged: true,
+  insertedId: null,
+  matchedCount: 86,
+  modifiedCount: 86,
+  upsertedCount: 0 }
+db.people.find({"job":"Editor"})
